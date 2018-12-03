@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.redditreaper" name="Reddit Reaper Repository" version="1.0" provider-name="Reddit Reaper">
-	<extension point="xbmc.addon.repository" name="Reddit Reaper Repository">
-		<info compressed="false">http://redditreaper.tech/repo/plugins/addon.xml</info>
-		<checksum>http://redditreaper.tech/repo/plugins/addons.xml.md5</checksum>
-		<datadir zip="true">http://redditreaper.tech/repo/plugins/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Reddit Reaper's Kodi Build Repository</summary>
-		<description>Reaper Builds</description>
-		<platform>all</platform>
-	</extension>
+<addon id="local.repo" name="[COLOR crimson]Local Repo[/COLOR]" version="12.0.001" provider-name="@Circero">
+    <extension point="xbmc.addon.repository" name="Local Repo">
+        <info compressed="false">https://raw.githubusercontent.com/circero/local.repo/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/circero/local.repo/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/circero/local.repo/zips/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary></summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
 </addon>
+
