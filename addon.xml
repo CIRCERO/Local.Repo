@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <addon id="local.repo" name="[COLOR lime]Local Repo[/COLOR]" version="2.00.05" provider-name="Circero">
+        <extension point="xbmc.addon.repository">
+            <info compressed="false">https://circero.github.io/local.repo/master/addons.xml</info>
+            <checksum>https://circero.github.io/local.repo/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://circero.github.io/local.repo/master/zips/</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>random trials, my 1st repo</summary>
+            <description>Download and install addons</description>
+            <platform>all</platform>
+         </extension>
+   </addon>
