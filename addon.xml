@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="local.repo" name="[COLOR crimson]Local Repo[/COLOR]" version="12.0.001" provider-name="@Circero">
+<addon id="local.repo" name="[COLOR crimson]Local Repo[/COLOR]" version="2.00.05" provider-name="Circero">
     <extension point="xbmc.addon.repository" name="Local Repo">
         <info compressed="false">https://raw.githubusercontent.com/circero/local.repo/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/circero/local.repo/master/addons.xml.md5</checksum>
