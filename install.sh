@@ -63,7 +63,7 @@ pack_zip()
     \cp -af $cur_cmd $zip_dir/
     sed -i 's/\/bin\/sh/\/system\/bin\/sh/g' $zip_dir/`basename $0`
     sync; sync
-    7z a ${C:\Users\kevng\AppData\Roaming\Kodi\addons\_tools\zips}.zip $zip_dir
+    7z a ${C:/Users/kevng/AppData/Roaming/Kodi/addons/zips}.zip $zip_dir
 
     mkdir -p /tmp/.samba
     \cp -avf ${zip_dir}.zip /tmp/.samba

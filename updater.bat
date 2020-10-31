@@ -38,19 +38,19 @@ ECHO Current skin version is %Version%
 ECHO ----------------------------------------
 
 cd BUILD
-        C:\Users\kevng\AppData\Roaming\Kodi\addons\zips -r -q %1-%Version%.zip %1
+        F:\local.repo\zips -r -q %1-%Version%.zip %1
 
 ECHO ----------------------------------------
 ECHO Moving files to repository
 ECHO ----------------------------------------
 
-if exist "F:\rebuilt.addons\%1\" rmdir "F:\rebuilt.addons\%1\" /S /Q
-md "F:\rebuilt.addons\%1\"
-copy "%1-%Version%.zip" "F:\rebuilt.addons\%1\"
-copy "%1\fanart.jpg" "F:\rebuilt.addons\%1\fanart.jpg"
-copy "%1\icon.png" "F:\rebuilt.addons\%1\icon.png"
-copy "%1\addon.xml" "F:\rebuilt.addons\%1\addon.xml"
-copy "%1\changelog.txt" "F:\rebuilt.addons\%1\changelog-%Version%.txt"
+if exist "F:\local.repo\%1\" rmdir "F:\local.repo\%1\" /S /Q
+md "F:\local.repo\%1\"
+copy "%1-%Version%.zip" "F:\local.repo\%1\"
+copy "%1\fanart.jpg" "F:\local.repo\%1\fanart.jpg"
+copy "%1\icon.png" "F:\local.repo\%1\icon.png"
+copy "%1\addon.xml" "F:\local.repo\%1\addon.xml"
+copy "%1\changelog.txt" "F:\local.repo\%1\changelog-%Version%.txt"
 
 ECHO ----------------------------------------
 ECHO Removing BUILD folder
@@ -64,7 +64,7 @@ ECHO Generating addons.xml and addons.xml.md5
 ECHO ----------------------------------------
 
 F:
-cd \_plugin_zips
-python C:\Users\kevng\AppData\Roaming\Kodi\addons\addons_xml_and_zipfile_generator
+cd 
+python C:/Users/kevng/AppData/Roaming/Kodi/addons/addons_xml_generator.py
 
 pause
